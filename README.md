@@ -2,11 +2,10 @@
 Nestjs 10 Project to test sweep AI 
 
 ## Installation
-To install the project dependencies, run the following command:
+To create a new project and install the necessary dependencies, run the following command:
 ```
-npm install
+nest new project-name
 ```
 
 ## Running the project
-To start the project, run the following command:
-```
+To start the project, use the start script set up by the `nest new` command:
