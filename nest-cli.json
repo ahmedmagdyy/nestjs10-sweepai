@@ -1,14 +1,8 @@
 {
   "collection": "@nestjs/schematics",
   "sourceRoot": "src",
-  "builders": {
-    "@nestjs/cli": {
-      "build": {
-        "builder": "@nestjs/swc",
-        "compilerOptions": {
-          "builder": "@nestjs/swc"
-        }
-      }
-    }
+  "compilerOptions": {
+    "builder": "swc",
+    "typeCheck": true
   }
 }
