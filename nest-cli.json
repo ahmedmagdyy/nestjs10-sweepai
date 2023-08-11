@@ -4,7 +4,10 @@
   "builders": {
     "@nestjs/cli": {
       "build": {
-        "builder": "@nestjs/swc"
+        "builder": "@nestjs/swc",
+        "compilerOptions": {
+          "builder": "@nestjs/swc"
+        }
       }
     }
   }
