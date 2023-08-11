@@ -9,3 +9,4 @@ npm install
 
 ## Running the project
 To start the project, run the following command:
+```
