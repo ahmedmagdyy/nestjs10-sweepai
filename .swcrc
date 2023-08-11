@@ -1,0 +1,23 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": true
+    },
+    "target": "es2017"
+  },
+  "module": {
+    "type": "commonjs",
+    "strict": false,
+    "strictMode": true,
+    "lazy": false,
+    "noInterop": false
+  },
+  "env": {
+    "mode": "usage",
+    "coreJs": 3
+  },
+  "sourceMaps": true,
+  "checkTypes": true
+}
