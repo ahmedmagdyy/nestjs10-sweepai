@@ -7,9 +7,7 @@ export interface User {
   password: string;
 }
 
-export interface UserDocument extends User, Document {}
-
-export const UserSchema = new Schema<UserDocument>({
+export const UserSchema = new Schema<User>({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
