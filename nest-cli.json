@@ -1,4 +1,16 @@
 {
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src"
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "tsConfigPath": "tsconfig.build.json",
+    "assets": ["**/*.proto"],
+    "watchAssets": true
+  },
+  "builders": {
+    "@nestjs/cli": {
+      "build": {
+        "builder": "@nestjs/swc"
+      }
+    }
+  }
 }
