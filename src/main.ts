@@ -1,7 +1,9 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { MongooseModule } from '@nestjs/mongoose';
-import { DATABASE_CONNECTION_STRING } from './config/database.config';
+import * as dotenv from 'dotenv';
+dotenv.config();
+const DATABASE_CONNECTION_STRING = process.env.DATABASE_CONNECTION_STRING;
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
