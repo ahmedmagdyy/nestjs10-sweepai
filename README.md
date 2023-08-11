@@ -1,5 +1,7 @@
-# nestjs10-sweepai
-Nestjs 10 Project to test sweep AI 
+<new_file>
+# Generated README
+
+This is the generated README file from Nestjs.
 
 ## Installation
 To create a new project and install the necessary dependencies, run the following command:
