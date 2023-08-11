@@ -1,4 +1,4 @@
-import { Document, Schema } from 'mongoose';
+import { Schema } from 'mongoose';
 import * as bcrypt from 'bcrypt';
 
 export interface User {
@@ -13,7 +13,7 @@ export const UserSchema = new Schema<User>({
   password: { type: String, required: true },
 });
 
-UserSchema.pre('save', async function(next) {
+UserSchema.pre('save', async function (next) {
   if (this.isModified('password')) {
     this.password = await bcrypt.hash(this.password, 10);
   }
